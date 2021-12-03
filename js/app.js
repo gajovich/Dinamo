@@ -499,7 +499,7 @@ window.onload = function () {
       });
    }
 }
-// let scr_body = document.querySelector('body');
+let scr_body = document.querySelector('body');
 let scr_blocks = document.querySelectorAll('._scr-sector');
 let scr_items = document.querySelectorAll('._scr-item');
 let scr_fix_block = document.querySelectorAll('._side-wrapper');
@@ -604,7 +604,7 @@ setTimeout(function () {
 }, 100);
 
 function scroll_lazy(scr_item) {
-	/*
+	
 	let lazy_src = scr_item.querySelectorAll('*[data-src]');
 	if (lazy_src.length > 0) {
 		for (let index = 0; index < lazy_src.length; index++) {
@@ -625,8 +625,8 @@ function scroll_lazy(scr_item) {
 			}
 		}
 	}
-	*/
-	/*
+	
+	
 	window.onload = () => {
 		const observer = new IntersectionObserver((entries, observer) => {
 			entries.forEach(entry => {
@@ -641,7 +641,7 @@ function scroll_lazy(scr_item) {
 
 		document.querySelectorAll('img').forEach(img => observer.observe(img))
 	}
-	*/
+	
 }
 function scroll_load_item(scr_item) {
 	if (scr_item.classList.contains('_load-map') && !scr_item.classList.contains('_loaded-map')) {
